@@ -26,6 +26,10 @@ a {
 	align-items: center;
 }
 
+h1 {
+	margin-bottom: 5rem;
+}
+
 .description {
 	float: right;
 	margin-left: 10px;

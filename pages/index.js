@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
-import { useRouter } from 'next/router';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
+import React, { useEffect } from 'react';
 
 // Make sure to call `loadStripe` outside of a component’s render to avoid
 // recreating the `Stripe` object on every render.
@@ -32,6 +32,7 @@ const Home = () => {
 	return (
 		<div className='container'>
 			<div className='main'>
+				<h1>Stripe Checkout</h1>
 				<form action='/api/checkout_sessions' method='POST'>
 					<section>
 						<div>
